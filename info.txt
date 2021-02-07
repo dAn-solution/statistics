@@ -1,0 +1,7 @@
+2021.02.07 スタート
+1. GIT-Hubにstatisticsを作成
+2. Desktop下にgit clone
+3. 権限がrootになっていてchownで変更
+   sudo chmod -R 755 ~/Desktop/statistics
+4. Dokerfileを作成　かめさんのPython講座（ブログ）にあるDockerfileを流用
+   docker run -p 8888:8888 -v ~/Desktop/knocks100:/work --name my-knock 8b46fd001f1f
